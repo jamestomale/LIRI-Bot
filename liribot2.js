@@ -19,11 +19,9 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
 });
 
 
-
-
 var spotify = new Spotify(
-  id="",
-  secret="",
+  id="2e0b03126dc04d90ba6fa2ca1eebc0fa",
+  secret="631645c6491647368dd72e970c611e01",
 );
  
 spotify
