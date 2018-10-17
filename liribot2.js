@@ -18,21 +18,6 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
   }
 });
 
-
-var spotify = new Spotify(
-  id="2e0b03126dc04d90ba6fa2ca1eebc0fa",
-  secret="631645c6491647368dd72e970c611e01",
-);
- 
-spotify
-  .request('https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx')
-  .then(function(data) {
-    console.log(data); 
-  })
-  .catch(function(err) {
-    console.error('Error occurred: ' + err); 
-  });
-
   request('http://www.google.com', function (error, response, body) {
   console.log('error:', error); // Print the error if one occurred
   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
